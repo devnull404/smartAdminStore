@@ -1,0 +1,27 @@
+@import '../variables'
+
+.controlItem
+    font-size: 25px
+    display: flex
+    justify-content: space-between
+    padding: 20px 20px 20px 20px
+    margin: 30px 0 0 0
+    border-radius: 40px
+    text-decoration: none
+    font-weight: bold
+    color: white
+    transition: 1s all ease-in-out
+    width: 200px
+.controlItem:hover
+    background-color: $link-color
+    color: #ffffff
+@media screen and ( max-width: 1050px)
+    .controlItem
+        width: 60px
+    .controlText
+        display: none
+
+    
+
+.controlIcons
+    filter: invert(100%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%)

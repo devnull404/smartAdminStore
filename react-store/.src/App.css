@@ -1,0 +1,128 @@
+header {
+  background-color: #9AA4EC;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.hlogo-container {
+  height: 5vh;
+  width: 20vw;
+  display: flex;
+  justify-content: center;
+}
+.hlogo-container img {
+  height: inherit;
+  animation: main-logo-ani 8s infinite linear;
+}
+
+.hside-container {
+  width: 75vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@keyframes main-logo-ani {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.hSearchBox {
+  width: 200px;
+  color: #100000;
+  padding: 1vh;
+  border-radius: 30px;
+  border: none;
+  transition: 1s all ease-in-out;
+}
+
+.hSearchBox:focus {
+  width: 300px;
+  background-color: #fffed5;
+}
+
+.controlItem {
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px 20px 20px;
+  margin: 30px 0 0 0;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  transition: 1s all ease-in-out;
+  width: 200px;
+}
+
+.controlItem:hover {
+  background-color: #61dafb;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1050px) {
+  .controlItem {
+    width: 60px;
+  }
+
+  .controlText {
+    display: none;
+  }
+}
+.controlIcons {
+  filter: invert(100%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+}
+
+main {
+  height: 80vh;
+  width: 95vw;
+  display: flex;
+  flex-direction: row;
+  justify-items: flex-start;
+}
+
+section.controlItemContainer {
+  border-right: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20vw;
+  transition: 1s all ease-in-out;
+}
+
+article.subAppContainer {
+  width: 75vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1050px) {
+  section.controlItemContainer {
+    width: 10vw;
+  }
+}
+.productBrand {
+  width: 10vw;
+  border: 1px solid gray;
+}
+
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue";
+  margin: 10;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid red;
+}
+
+body {
+  background-color: #282c34;
+  color: white;
+}
+
+/*# sourceMappingURL=App.css.map */

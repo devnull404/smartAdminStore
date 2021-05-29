@@ -1,0 +1,42 @@
+@import "../variables"
+    
+header
+    background-color: #9AA4EC
+    nav
+        display: flex
+        justify-content: center
+        margin: 0 auto
+.hlogo-container
+    height: $header-height
+    width: $header-logo-w
+    display: flex
+    justify-content: center
+    img
+        height: inherit
+        animation: main-logo-ani 8s infinite linear
+        transition: 1s all ease-in-out
+    img:hover
+        filter: invert(100%)
+        
+.hside-container
+    width: $header-rest-w
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+@keyframes main-logo-ani
+    from
+        transform: rotate(0deg)
+    to
+        transform: rotate(360deg)
+
+.hSearchBox
+    width: 200px
+    color: #100000,
+    padding: 1vh,
+    border-radius: 30px,
+    border: none
+    transition: 1s all ease-in-out
+.hSearchBox:focus
+    width: 300px
+    background-color: #fffed5

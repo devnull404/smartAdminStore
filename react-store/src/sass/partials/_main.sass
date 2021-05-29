@@ -1,0 +1,32 @@
+@import '../variables'
+@import 'controlItems'
+
+
+main
+    height: 80vh
+    width: $header-rest-w + $header-logo-w
+    display: flex
+    flex-direction: row
+    //border: 1px solid gray
+    justify-items: flex-start
+
+section.controlItemContainer
+    border-right: 1px solid gray
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: $header-logo-w
+    transition: 1s all ease-in-out
+
+article.subAppContainer
+    width: $header-rest-w
+    display: flex
+    justify-content: flex-start
+    align-items: flex-start
+    align-content: flex-start
+    flex-wrap: wrap
+    transition: 1s all ease
+
+@media screen and ( max-width: 1050px )
+    section.controlItemContainer
+        width: 10vw
